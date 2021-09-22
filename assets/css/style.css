@@ -46,6 +46,10 @@ button {
     text-align: left;
 }
 
+#question-1, #question-2, #question-3, #question-4, #question-5, #final-score, #result, #highscores {
+    display: none;
+}
+
 ul li {
     list-style-type: none;
     padding-top: 5px;
