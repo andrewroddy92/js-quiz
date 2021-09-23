@@ -10,7 +10,7 @@
 <body>
 
     <header>
-        <p>View Highscores</p>
+        <p id ='viewhighscores'>View Highscores</p>
         <p id='timeLeft'></p>
     </header>
 
@@ -23,40 +23,40 @@
     <section id="question-1" class="question">
         <h1>Inside which HTML element do we put the JavaScript?</h1>
         <ul>
-            <li><button>1. &ltscript&gt</button></li>
-            <li><button>2. &ltscripting&gt</button></li>
-            <li><button>3. &ltjs&gt</button></li>
-            <li><button>4. &ltjavascript&gt</button></li>
+            <li><button class="correct">1. &ltscript&gt</button></li>
+            <li><button class="incorrect">2. &ltscripting&gt</button></li>
+            <li><button class="incorrect">3. &ltjs&gt</button></li>
+            <li><button class="incorrect">4. &ltjavascript&gt</button></li>
         </ul>
     </section>
 
     <section id="question-2" class="question">
         <h1>How do you write "Hello World" in an alert box?</h1>
         <ul>
-            <li><button>1. alert("Hello World"); </button></li>
-            <li><button>2. alertBox("Hello World");</button></li>
-            <li><button>3. msgBox("Hello World");</button></li>
-            <li><button>4. msg("Hello World");</button></li>
+            <li><button class="correct">1. alert("Hello World"); </button></li>
+            <li><button class="incorrect">2. alertBox("Hello World");</button></li>
+            <li><button class="incorrect">3. msgBox("Hello World");</button></li>
+            <li><button class="incorrect">4. msg("Hello World");</button></li>
         </ul>
     </section>
 
     <section id="question-3" class="question">
         <h1>How to write an IF statement in JavaScript?</h1>
         <ul>
-            <li><button>1. if i = 5</button></li>
-            <li><button>2. if (i == 5)</button></li>
-            <li><button>3. if i == 5 then;</button></li>
-            <li><button>4. if i = 5 then</button></li>
+            <li><button class="incorrect">1. if i = 5</button></li>
+            <li><button class="correct">2. if (i == 5)</button></li>
+            <li><button class="incorrect">3. if i == 5 then;</button></li>
+            <li><button class="incorrect">4. if i = 5 then</button></li>
         </ul>
     </section>
 
     <section id="question-4" class="question">
         <h1>How does a FOR loop start?</h1>
         <ul>
-            <li><button>1. for (i &lt= 5; i++)</button></li>
-            <li><button>2. for (i = 0; i &lt= 5)</button></li>
-            <li><button>3. for (i = 0; i &lt= 5; i++)</button></li>
-            <li><button>4. for i = 1 to 5
+            <li><button class="incorrect">1. for (i &lt= 5; i++)</button></li>
+            <li><button class="incorrect">2. for (i = 0; i &lt= 5)</button></li>
+            <li><button class="correct">3. for (i = 0; i &lt= 5; i++)</button></li>
+            <li><button class="incorrect">4. for i = 1 to 5
             </button></li>
         </ul>
     </section>
@@ -64,10 +64,10 @@
     <section id="question-5" class="question">
         <h1>Which event occurs when the user clicks on an HTML element?</h1>
         <ul>
-            <li><button>1. onmouseclick</button></li>
-            <li><button>2. onchange</button></li>
-            <li><button>3. onmouseover</button></li>
-            <li><button>4. onclick</button></li>
+            <li><button class="incorrect">1. onmouseclick</button></li>
+            <li><button class="incorrect">2. onchange</button></li>
+            <li><button class="incorrect">3. onmouseover</button></li>
+            <li><button class="correct">4. onclick</button></li>
         </ul>
     </section>
     <section id="result">
@@ -75,17 +75,18 @@
     </section>
 
     <section id="final-score">
-        <h1>Congratulations!!!!!11!</h1>
-        <p>Your final score is:</p>
+        <h1>Congratulations!!!!!!</h1>
+        <p id="score"></p>
         <label for="initials">Enter your initials:</label>
         <input type="text" id="initials" name="initials">
-        <button>Submit</button>
+        <button id='submitscore'>Submit</button>
     </section>
 
     <section id="highscores">
         <h1>Highscores</h1>
-        <button>Go Back</button>
-        <button>Clear Highscores</button>
+        <ul id='display'></ul>
+        <button id='goback'>Go Back</button>
+        <button id='clear'>Clear Highscores</button>
     </section>
 
     <script src="./assets/javescript/script.js"></script>
